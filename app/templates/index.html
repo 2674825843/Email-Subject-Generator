@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>智能邮件主题生成器</title>
+</head>
+<body>
+    <h2>智能邮件主题生成器</h2>
+    <form method="POST">
+        <textarea name="body" rows="10" cols="80" placeholder="粘贴邮件正文...">{{ subject or '' }}</textarea><br>
+        <button type="submit">生成主题</button>
+    </form>
+    {% if subject %}
+        <h3>生成主题：</h3>
+        <p><strong>{{ subject }}</strong></p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,9 @@
+@echo off
+echo Preprocessing data...
+python data\preprocess.py
+
+echo Training model...
+python model\train.py
+
+echo Starting web app...
+python app\app.py
